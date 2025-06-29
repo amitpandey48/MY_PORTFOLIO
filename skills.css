@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color:whitesmoke;
+}
+
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+
+.navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+  color: #000;
+}
+
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url(b2.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home .text-one {
+  font-size: 25px;
+  color: #0E2431;
+}
+
+.home .text-two {
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #0E2431;
+}
+
+.home .button1 {
+  margin: 14px 0;
+}
+
+.home .button1 button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #264ebd36;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.home .button1 button:hover {
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.certificates {
+  padding: 40px 20px;
+}
+
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  background-color: #4070f4;
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4070f4;
+  color: white;
+}
+
+footer span {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home .text-two {
+      font-size: 50px; /* Reduce size for smaller screens */
+  }
+  .home .text-three {
+      font-size: 30px; /* Reduce size for smaller screens */
+  }
+  .home .text-four {
+      font-size: 20px; /* Reduce size for smaller screens */
+  }
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start; /* Adjust navbar items for smaller screens */
+  }
+}
+/* Existing styles remain unchanged... */
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* Media Query to Hide Navbar on Small Devices */
+@media (max-width: 768px) {
+  nav {
+      display: none; /* Hide the entire nav for small devices */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home .text-two {
+      font-size: 50px; /* Reduce size for smaller screens */
+  }
+  .home .text-three {
+      font-size: 30px; /* Reduce size for smaller screens */
+  }
+  .home .text-four {
+      font-size: 20px; /* Reduce size for smaller screens */
+  }
+}
+section .button1 button{
+  outline: none;
+  padding: 8px 16px;
+  border: #100043;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  background:#4070f468;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button1 button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+section .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
